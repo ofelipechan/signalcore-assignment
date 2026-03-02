@@ -16,10 +16,10 @@ const MESSAGE_INTERVAL_MS = 10_000
 const DEFAULT_PROMPT = `We need to select an LLM observability platform to monitor, trace, and evaluate our production LLM applications. We run a mix of RAG pipelines and multi-step agents and need to compare vendors before committing.
 
 Vendors to evaluate:
-- LangSmith (LangChain's commercial observability platform)
-- Langfuse (open-source, MIT, LLM observability)
-- Braintrust (managed evaluation and observability)
-- Posthog (broader platform with LLM observability)
+- LangSmith
+- Langfuse
+- Braintrust
+- Posthog
 
 Requirements to evaluate against (by priority):
 - High: Framework-agnostic tracing (not locked into LangChain or any single framework)
