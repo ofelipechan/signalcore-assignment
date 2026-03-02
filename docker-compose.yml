@@ -1,0 +1,16 @@
+# Run from repo root: npm run start:docker (or docker compose up).
+# Backend only; frontend runs locally (pnpm run dev in frontend/).
+# Ensure backend/.env exists with OPENAI_API_KEY (or other LLM key) and TAVILY_API_KEY.
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8001:8001"
+    env_file:
+      - backend/.env
+    volumes:
+      - ./backend:/app
+    restart: "no"

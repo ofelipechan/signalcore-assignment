@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ai-bg: #0f0f12;
+  --ai-surface: #18181c;
+  --ai-border: #2a2a2e;
+  --ai-primary: #6366f1;
+  --ai-muted: #71717a;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--ai-bg);
+  color: #e4e4e7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Markdown content on results page */
+.markdown-body h1 { @apply text-2xl font-bold mt-6 mb-4; }
+.markdown-body h2 { @apply text-xl font-semibold mt-5 mb-3; }
+.markdown-body h3 { @apply text-lg font-medium mt-4 mb-2; }
+.markdown-body p { @apply my-3 leading-relaxed; }
+.markdown-body ul { @apply list-disc pl-6 my-3 space-y-1; }
+.markdown-body ol { @apply list-decimal pl-6 my-3 space-y-1; }
+.markdown-body a { @apply text-ai-primary underline hover:opacity-90; }
+.markdown-body code { @apply bg-ai-surface px-1.5 py-0.5 rounded text-sm; }
+.markdown-body pre { @apply bg-ai-surface p-4 rounded-lg overflow-x-auto my-3; }
+.markdown-body pre code { @apply bg-transparent p-0; }
+.markdown-body table { @apply w-full border-collapse my-4; }
+.markdown-body th, .markdown-body td { @apply border border-ai-border px-3 py-2 text-left; }
+.markdown-body th { @apply font-semibold bg-ai-surface; }
+.markdown-body blockquote { @apply border-l-4 border-ai-primary pl-4 my-3 text-ai-muted italic; }
+.markdown-body del { @apply line-through text-ai-muted; }
+.markdown-body li input[type="checkbox"] { @apply mr-2 align-middle accent-ai-primary; }
+.markdown-body hr { @apply border-ai-border my-4; }

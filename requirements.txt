@@ -1,0 +1,33 @@
+# Vendor Research Tool — backend dependencies
+# Install: pip install -r requirements.txt
+
+# Web framework
+fastapi==0.135.0
+uvicorn==0.41.0
+
+# HTTP client (fetch_url tool, optional search APIs)
+httpx==0.28.1
+
+# Data validation and settings
+pydantic==2.12.5
+pydantic-settings==2.13.1
+python-dotenv==1.0.1
+
+# HTML main-content extraction (fetch_url tool)
+readability-lxml==0.8.4.1
+
+# LLM (agent) — use one or both
+pydantic-ai==1.63.0
+openai==2.24.0
+anthropic==0.84.0
+openrouter==0.7.11
+
+# Web search (optional; omit if using scrape-only)
+tavily-python==0.7.22
+
+# Optional: streaming responses
+sse-starlette==3.3.2
+
+# Optional: CLI and logging (uncomment if needed)
+# typer>=0.12.0
+# loguru>=0.7.0

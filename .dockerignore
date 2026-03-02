@@ -1,0 +1,30 @@
+# Git and env
+.git
+.gitignore
+*.env
+.env*
+
+# Frontend (backend image only)
+frontend
+node_modules
+
+# Python
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.mypy_cache
+.ruff_cache
+
+# IDE and OS
+.cursor
+.idea
+.vscode
+*.swp
+.DS_Store
+
+# Docs and plan (not needed in image)
+*.md
+!backend/README.md
